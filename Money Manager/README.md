@@ -65,10 +65,10 @@ import webbrowser
 
 # Built With Blood, Sweat, Tears and Coffee by 
 
-* **Chitwan Sharma** CompSci McMaster University
 * **Ather Hassan** Software Engineering McMaster University
-* **Mrinal Tiwari** Software Engineering McMaster University
 * **Sara Abu Hattab** Software Engineering McMaster University
+* **Mrinal Tiwari** Software Engineering McMaster University
+* **Chitwan Sharma** Computer Science McMaster University
 
 ## Further Development
 
