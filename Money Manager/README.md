@@ -18,6 +18,29 @@ from tkinter import*
 import random
 import webbrowser
 ```
+
+```
+## adds to the year and changes the value of any assets( assets have to auto update their value)
+def incrementYear():
+    global Years
+    global income
+    global exepnses
+    global asset
+    global ownedHomes
+    global money
+    Years+=1
+    money+=income
+    money-=expenses
+    if(len(ownedHomes)!=0):
+        for i in len(ownedHomes):
+            if (ownedHomes[i][2]>0):
+                money-=ownedHomes[i][3]
+            ownedHomes[i][2]=0.96*ownedHomes[i][2]
+            ownedHomes[i][1]=1.05*ownedHomes[i][1]
+    asset=asset*1.05
+    t = Timer(120.0, incrementYear)    
+    t.start()
+ ```
 ## Functionalities
 * We used the timer module to create a function which to increase time exponentially. One minute in the game is one year in life.
 * We used the tkinter module to a create a pop up window which asks for user's input. 
@@ -25,7 +48,7 @@ import webbrowser
 * After the input of all your personal financials, the pop-up window open to show the functionalities that the app performs.
     ![pop-up](https://user-images.githubusercontent.com/35289522/44312907-79affd00-a3cd-11e8-9995-5197007c51c1.PNG)
 * If you click on "Housing" the system shows 3 houses which you can buy within your credentials and also whether youy can buy them outright or with a loan.
-* If you click "Personal Info" the system shows you how long you've been playing(in my case it's 0 years as 1 minute wasn't completed on the timer). It allows shows your credentials after you've bought a house, invested something on stocks. It keeps on changing your financial ingo as you go on buying something in the game. 
+* If you click "Personal Info" the system shows you how long you've been playing(in my case it's 0 years as 1 minute wasn't completed on the timer). It shows your credentials after you've bought a house, invested something on stocks. It keeps on changing your financial info as you go on buying something in the game. 
     ![input3](https://user-images.githubusercontent.com/35289522/44312968-41f58500-a3ce-11e8-99a9-f93d9f408e6f.PNG)
 * If you click on the "stock investment" it will show you some popular stock options and their real time market value. We made use of the web browser functionality of python to connect the web links with our pop-up windows.
     ![stocks](https://user-images.githubusercontent.com/35289522/44313014-b29ca180-a3ce-11e8-8376-ab5e2360b83f.PNG)
@@ -35,7 +58,7 @@ import webbrowser
 
 # ProtoType
 
-### As we had only 12 hours to make our web app, we used **Proto.io** for presentation at the end of the day to showcase how we envision our app to like with time and further development. The prototype is interactive and clickable.
+### As we had only 12 hours to make our web app, we used [Proto.io](https://proto.io/) for presentation at the end of the day to showcase how we envision our app to like with time and further development. The prototype is interactive and clickable.
 
 **Welcome Screen**
 
@@ -76,7 +99,7 @@ import webbrowser
 
 
 
-## Thanks Too
+## Thanks To
 * Scotiabank for a great event!
 * All the mentors present for helping us out and giving us many ideas!!
 
