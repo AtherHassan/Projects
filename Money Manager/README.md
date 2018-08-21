@@ -47,7 +47,7 @@ def incrementYear():
     ![input info](https://user-images.githubusercontent.com/35289522/44312870-dbbc3280-a3cc-11e8-980b-274fe3014066.PNG)
 * After the input of all your personal financials, the pop-up window open to show the functionalities that the app performs.
     ![pop-up](https://user-images.githubusercontent.com/35289522/44312907-79affd00-a3cd-11e8-9995-5197007c51c1.PNG)
-* If you click on "Housing" the system shows 3 houses which you can buy within your credentials and also whether youy can buy them outright or with a loan.
+* If you click on "Housing" the system shows 3 houses which you can buy within your credentials and also whether you can buy them outright or with a loan.
 * If you click "Personal Info" the system shows you how long you've been playing(in my case it's 0 years as 1 minute wasn't completed on the timer). It shows your credentials after you've bought a house, invested something on stocks. It keeps on changing your financial info as you go on buying something in the game. 
     ![input3](https://user-images.githubusercontent.com/35289522/44312968-41f58500-a3ce-11e8-99a9-f93d9f408e6f.PNG)
 * If you click on the "stock investment" it will show you some popular stock options and their real time market value. We made use of the web browser functionality of python to connect the web links with our pop-up windows.
