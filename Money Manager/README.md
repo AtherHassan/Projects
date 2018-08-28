@@ -58,7 +58,7 @@ def incrementYear():
 
 # ProtoType
 
-### As we had only 12 hours to make our web app, we used [Proto.io](https://proto.io/) for presentation at the end of the day to showcase how we envision our app to like with time and further development. The prototype is interactive and clickable.
+### As we only had 12 hours to make our web app, we used [Proto.io](https://proto.io/) for presentation at the end of the day to showcase how we envision our app to like with time and further development. The prototype is interactive and clickable.
 
 **Welcome Screen**
 
